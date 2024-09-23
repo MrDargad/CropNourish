@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahesh - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Mahesh's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li id="home">Home</li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="contact.html">Contact Me </a></li>
+                </ul>
+            </div>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="text-purple">Mahesh</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="photo1.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done to became</span>
+            <h1>Web Developer</h1>
+            <div class="box"> 
+                <div class="vertical">
+                    <img class="img-top" src="html-icon.png" alt="">
+                    <div class="vertical-title">
+                        HTML
+                    </div>
+                    <div class="vertical-desc">
+                        The HyperText Markup Language or HTML is the standard markup language for documents designed to
+                        be displayed in a web browser.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="css-icon.png" alt="">
+                    <div class="vertical-title">
+                        CSS
+                    </div>
+                    <div class="vertical-desc">
+                        Cascading Style Sheets is a style sheet language used for specifying the presentation and
+                        styling of a document written in a markup language such as HTML or XML.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="js-icon.png" alt="">
+                    <div class="vertical-title">
+                        JavaScript
+                    </div>
+                    <div class="vertical-desc">
+                        JavaScript, often abbreviated as JS, is a programming language and core technology of the World
+                        Wide Web, alongside HTML and CSS.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="bootstrap-icon.png" alt="">
+                    <div class="vertical-title">
+                        Bootstrap
+                    </div>
+                    <div class="vertical-desc">
+                        Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end
+                        web development.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="img-top" src="php-icon.png" alt="">
+                    <div class="vertical-title">
+                        PHP
+                    </div>
+                    <div class="vertical-desc">
+                        PHP is a general-purpose scripting language geared towards web development.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Mahesh's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second"></div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Project</li>
+                </ul>
+            </div>
+            <div class="footer-fourth"></div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; maheshdargad.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Software Developer',],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

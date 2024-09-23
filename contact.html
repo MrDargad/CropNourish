@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="contact-style.css" />
+  <title>Contact Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Mahesh's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Projects</a></li>
+          <li id="contact">Contact Me</li>
+        </ul>
+      </div>
+  </header>
+
+
+  <div class="container">
+    <h3>Contact Form</h3>
+    <form name='enquiry' onSubmit="return contactValidation();" action="modified.php" method="post"
+      enctype="multipart/form-data">
+      <label for="fname">First Name</label>
+      <input type="text" name="fname" placeholder="Your name.." required />
+
+      <label for="lname">Last Name</label>
+      <input type="text" name="lname" placeholder="Your last name.." required />
+
+      <label for="country">Country</label>
+      <select name="country">
+        <option value="india">India</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <label for="email">Email:</label>
+      <input type="text" name="email" placeholder="maheshdargad@gmail.com" required />
+
+      <label for="phone">Mobile No.:</label>
+      <input type="text" name="phone" placeholder="0000000000" required />
+
+      <label for="subject">Subject</label>
+      <textarea name="subject" placeholder="Write something.." style="height: 200px"></textarea>
+
+      <input type="submit" name="submit" value="Submit" />
+    </form>
+  </div>
+
+  <script src="contact-style.css"></script>
+</body>
+
+</html>
